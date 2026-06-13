@@ -9,7 +9,6 @@ int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
   
   //* variaveis para carta 1 
-  int Carta1; //número da carta
   char estado; //* letra que representa o estado, (EX: A a H.)
   char codigo[5]; //* Código da carta (A01)
   char nomedacidade[20]; //* nome da cidade.
@@ -19,7 +18,6 @@ int main() {
   int pontosturisticos; //*número de pontos turisticos das cidades
 
   //* variaveis para a carta 2
-  int Carta2; //número da carta
   char estado2; //* letra que representa o estado, (EX: A a H.)
   char codigo2[5]; //* Código da carta (A01)
   char nomedacidade2[20]; //* nome da cidade.
