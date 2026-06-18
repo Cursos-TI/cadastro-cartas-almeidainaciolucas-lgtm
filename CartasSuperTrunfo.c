@@ -10,8 +10,8 @@ int main() {
   
   //* variaveis para carta 1 
   char estado, estado2; //* letra que representa o estado, (EX: A a H.)
-  char codigo, codigo2[5]; //* Código da carta (A01)
-  char nomedacidade, nomedacidade2[20]; //* nome da cidade.
+  char codigo[5], codigo2[5]; //* Código da carta (A01)
+  char nomedacidade[20], nomedacidade2[20]; //* nome da cidade.
   int populacao, populacao2; //* numero da população
   float areakm, areakm2; //* area em Km²
   float pib, pib2; //* PIB
