@@ -9,22 +9,15 @@ int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
   
   //* variaveis para carta 1 
-  char estado; //* letra que representa o estado, (EX: A a H.)
-  char codigo[5]; //* Código da carta (A01)
-  char nomedacidade[20]; //* nome da cidade.
-  int populacao; //* numero da população
-  float areakm; //* area em Km²
-  float pib; //* PIB
-  int pontosturisticos; //*número de pontos turisticos das cidades
-
-  //* variaveis para a carta 2
-  char estado2; //* letra que representa o estado, (EX: A a H.)
-  char codigo2[5]; //* Código da carta (A01)
-  char nomedacidade2[20]; //* nome da cidade.
-  int populacao2; //* numero da população
-  float areakm2; //* area em Km²
-  float pib2; //* PIB
-  int pontosturisticos2; //*numero de pontos turisticos.
+  char estado, estado2; //* letra que representa o estado, (EX: A a H.)
+  char codigo, codigo2[5]; //* Código da carta (A01)
+  char nomedacidade, nomedacidade2[20]; //* nome da cidade.
+  int populacao, populacao2; //* numero da população
+  float areakm, areakm2; //* area em Km²
+  float pib, pib2; //* PIB
+  int pontosturisticos, pontosturisticos2; //*número de pontos turisticos das cidades
+  float densidade, densidade2;
+  float percapita, percapita2;
 
   // Área para entrada de dados
   
@@ -74,9 +67,18 @@ int main() {
   printf("Número de pontos turisticos: ");
   scanf("%d", &pontosturisticos2);
 
+  //Area do calculo a densidade e PIB per capita
+  
+  densidade = populacao / areakm; 
+  percapita = pib / populacao;
+  
+  densidade2 = populacao2 / areakm2; 
+  percapita2 = pib2 / percapita2;
+
+
   // Área para exibição dos dados da cidade
   
-  // resutado da carta 1
+  // resultado da carta 1
  
   printf("\nEstado: %c\n", estado);
   printf("Codigo da carta: %s\n", codigo);
@@ -85,6 +87,8 @@ int main() {
   printf("Área em Km²: %f\n", areakm);
   printf("PIB: %f\n", pib);
   printf("Número de pontos turísticos: %d\n", pontosturisticos);
+  printf("Densidade populacional: %.2f", densidade);
+  printf("PIB per capita: %.2f", percapita);
 
   // resultado da carta 2
   
@@ -95,6 +99,8 @@ int main() {
   printf("Área em Km²: %f\n", areakm2);
   printf("PIB: %f\n", pib2);
   printf("Número de pontos turísticos: %d\n", pontosturisticos2);
+  printf("Densidade populacional: %.2f", densidade);
+  printf("PIB per capita: %.2f", percapita);
 
-return 0;
+  return 0;
 } 
