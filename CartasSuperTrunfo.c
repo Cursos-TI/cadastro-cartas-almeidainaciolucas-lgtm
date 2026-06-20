@@ -21,7 +21,7 @@ int main() {
 
   // Área para entrada de dados
   
- //* entrada de dados para a carta1 
+ //Dados da Carta 1 
   printf("Insira os dados da carta 1 \n");
   printf("insira o estado: ");
   scanf("%c", &estado);
@@ -44,7 +44,7 @@ int main() {
   printf("Número de pontos turisticos: ");
   scanf("%d", &pontosturisticos);
   
-  //entrada dos dados da carta 2
+  //Dados da Carta 2 
   printf("\nInsira os dados da carta 2 \n");
   printf("insira o estado: ");
   scanf(" %c", &estado2);
@@ -70,10 +70,10 @@ int main() {
   //Area do calculo a densidade e PIB per capita
   
   densidade =(float) populacao / areakm; 
-  percapita =(float) pib /populacao;
+  percapita =(float) (pib * 1000000000) /populacao;
   
   densidade2 =(float) populacao2 / areakm2; 
-  percapita2 =(float) pib2 / populacao2;
+  percapita2 =(float) (pib2 * 1000000000) / populacao2;
 
 
   // Área para exibição dos dados da cidade
