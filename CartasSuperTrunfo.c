@@ -16,8 +16,8 @@ int main() {
   float areakm, areakm2; //* area em Km²
   float pib, pib2; //* PIB
   int pontosturisticos, pontosturisticos2; //*número de pontos turisticos das cidades
-  float densidade, densidade2;
-  float percapita, percapita2;
+  float densidade, densidade2; // é a população dividido por area Km²
+  float percapita, percapita2; // é  o PIB dividido por população
 
   // Área para entrada de dados
   
@@ -69,11 +69,11 @@ int main() {
 
   //Area do calculo a densidade e PIB per capita
   
-  densidade = populacao / areakm; 
-  percapita = pib / populacao;
+  densidade =(float) populacao / areakm; 
+  percapita =(float) pib /populacao;
   
-  densidade2 = populacao2 / areakm2; 
-  percapita2 = pib2 / percapita2;
+  densidade2 =(float) populacao2 / areakm2; 
+  percapita2 =(float) pib2 / populacao2;
 
 
   // Área para exibição dos dados da cidade
@@ -84,11 +84,11 @@ int main() {
   printf("Codigo da carta: %s\n", codigo);
   printf("Nome da cidade: %s\n", nomedacidade);
   printf("População: %d\n", populacao);
-  printf("Área em Km²: %f\n", areakm);
-  printf("PIB: %f\n", pib);
+  printf("Área em Km²: %.2f\n", areakm);
+  printf("PIB: %.2f\n", pib);
   printf("Número de pontos turísticos: %d\n", pontosturisticos);
-  printf("Densidade populacional: %.2f", densidade);
-  printf("PIB per capita: %.2f", percapita);
+  printf("Densidade populacional: %.2f\n", densidade);
+  printf("PIB per capita: %.2f\n", percapita);
 
   // resultado da carta 2
   
@@ -96,11 +96,11 @@ int main() {
   printf("Codigo da carta: %s\n", codigo2);
   printf("Nome da cidade: %s\n", nomedacidade2);
   printf("População: %d\n", populacao2);
-  printf("Área em Km²: %f\n", areakm2);
-  printf("PIB: %f\n", pib2);
+  printf("Área em Km²: %.2f\n", areakm2);
+  printf("PIB: %.2f\n", pib2);
   printf("Número de pontos turísticos: %d\n", pontosturisticos2);
-  printf("Densidade populacional: %.2f", densidade);
-  printf("PIB per capita: %.2f", percapita);
+  printf("Densidade populacional: %.2f\n", densidade2);
+  printf("PIB per capita: %.2f\n", percapita2);
 
   return 0;
 } 
