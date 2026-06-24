@@ -27,9 +27,9 @@ int main() {
   // Área para entrada de dados
   
  //Dados da Carta 1 
-  printf("Insira os dados da carta 1 \n");
-  printf("insira o estado: ");
-  scanf("%c", &estado);
+  printf("Insira os dados da carta 1 \n"); //mensgem a ser exibida
+  printf("insira o estado: "); // mensagem com os dados das informaçoes a serem coletadas
+  scanf("%c", &estado); // area da coleta da variavel
     
   printf("Insira o código: ");
   scanf("%3s", codigo);
@@ -49,10 +49,11 @@ int main() {
   printf("Número de pontos turisticos: ");
   scanf("%d", &pontosturisticos);
   
-  //Dados da Carta 2 
-  printf("\nInsira os dados da carta 2 \n");
-  printf("insira o estado: ");
-  scanf(" %c", &estado2);
+  //Dados da Carta 2 //mostra imagem para insersir e logo a baixo espaco de interação com usuário
+  
+  printf("\nInsira os dados da carta 2 \n"); //mensgem a ser exibida
+  printf("insira o estado: "); // mensagem com os dados das informaçoes a serem coletadas
+  scanf(" %c", &estado2); // area da coleta da variavel
     
   printf("Insira o código: ");
   scanf("%s", codigo2);
@@ -74,20 +75,20 @@ int main() {
 
   //Area do calculo das funções
   
-  densidade =(float) populacao / areakm; 
-  percapita =(float) (pib * 1000000000) /populacao;
+  densidade = (float) populacao / areakm; // calculo para densidade populacional carta 1
+  percapita = (float) (pib * 1000000000) /populacao; // calculo para transformar o PIB em bilhoes carta 1
   
-  densidade2 =(float) populacao2 / areakm2; 
-  percapita2 =(float) (pib2 * 1000000000) / populacao2;
+  densidade2 = (float) populacao2 / areakm2; // calculo para densidade populacional carta2
+  percapita2 = (float) (pib2 * 1000000000) / populacao2; // calculo para transformar o PIB em bilhoes carta 2
 
-  superpoder = (float)(populacao + areakm + pib + pontosturisticos + percapita + (1.0f / densidade) );
-  superpoder = (float)(populacao2 + areakm2 + pib2 + pontosturisticos2 + percapita2 + (1.0f / densidade2) );
+  superpoder = (float)(populacao + areakm + pib + pontosturisticos + percapita + (1.0f / densidade) ); // exemplo de soma total dos atributos ** (com densidade populacional  invertida)
+  superpoder = (float)(populacao2 + areakm2 + pib2 + pontosturisticos2 + percapita2 + (1.0f / densidade2) );// exemplo de soma total dos atributos ** (com densidade populacional invertida)
   
   // Área para exibição dos dados da cidade
   
   // resultado da carta 1
  
-  printf("\nEstado: %c\n", estado);
+  printf("\nEstado: %c\n", estado); // area que vai ser exibida com informaçoes da carta 1 
   printf("Codigo da carta: %s\n", codigo);
   printf("Nome da cidade: %s\n", nomedacidade);
   printf("População: %d\n", populacao);
@@ -100,7 +101,7 @@ int main() {
  
   // resultado da carta 2
   
-  printf("\nEstado: %c\n", estado2);
+  printf("\nEstado: %c\n", estado2); //area que vai ser exibida com as informações da carta 2
   printf("Codigo da carta: %s\n", codigo2);
   printf("Nome da cidade: %s\n", nomedacidade2);
   printf("População: %d\n", populacao2);
@@ -113,7 +114,7 @@ int main() {
 
   // resultado da comparação entre as cartas 
 
-  print("população: carta 1 venceu (%d)", populacao > populacao2); // a omparação na população e outras varieaveis é para ver qual é maior
+  print("população: carta 1 venceu (%d)", populacao > populacao2); // a comparação na população e outras varieaveis é para ver qual é maior
   print("area Km²: carta 1 venceu (%d)", areakm > areakm2);
   print("PIB: carta 1 venceu (%d)", pib > pib2);
   print("Pontos Turisticos:  carta 1 venceu (%d)", pontosturisticos > pontosturisticos2);
@@ -121,5 +122,19 @@ int main() {
   print("PIB per capita: carta 1 venceu (%d)", percapita > percapita2);
   print("Super poder:  carta 1 venceu (%d)", superpoder > superpoder2);
 
+  
+  printf("Carta 1 - São Paulo (SP): 12.300.000\n"); //uma mensagem para comparativo
+  printf("Carta 2 - Rio de Janeiro (RJ): 6.000.000\n");
+
+//Resultado: Carta 1 (São Paulo) venceu!
+  
+  if(populacao > populacao2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  
+  }else{
+    printf("Carta 2 ganhou, a população é maior do que a Carta1\n");
+  }
+  
+  
   return 0;
 } 
