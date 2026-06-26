@@ -126,15 +126,43 @@ int main() {
   printf("Carta 1 - São Paulo (SP): 12.300.000\n"); //uma mensagem para comparativo
   printf("Carta 2 - Rio de Janeiro (RJ): 6.000.000\n");
 
-//Resultado: Carta 1 (São Paulo) venceu!
-  
+// estruturas de decisão 
+
   if(populacao > populacao2){
-    printf("Carta 1 (São Paulo) venceu\n");
-  
+    printf("\nCarta 1 (São Paulo) venceu!\n");
   }else{
-    printf("Carta 2 ganhou, a população é maior do que a Carta1\n");
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
   }
-  
+  if(areakm > areakm2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  }else{
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }
+  if(pib > pib2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  }else{
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }
+  if(pontosturisticos > pontosturisticos2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  }else{
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }
+  if(densidade < densidade2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  }else{
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }
+  if(percapita > percapita2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  }else{
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }
+  if(superpoder > superpoder2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  }else{
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }
   
   return 0;
 } 
