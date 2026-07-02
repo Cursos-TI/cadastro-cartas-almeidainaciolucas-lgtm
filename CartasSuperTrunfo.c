@@ -22,7 +22,7 @@ int main() {
   float densidade, densidade2; // é a população dividido por area Km²
   float percapita, percapita2; // é  o PIB dividido por população
   float superpoder, superpoder2; // a soma de todos atributos
-
+  int opcao; // variavel para escolha do menu
 
   // Área para entrada de dados
   
@@ -84,7 +84,7 @@ int main() {
   superpoder = (float)(populacao + areakm + pib + pontosturisticos + percapita + (1.0f / densidade) ); // exemplo de soma total dos atributos ** (com densidade populacional  invertida)
   superpoder = (float)(populacao2 + areakm2 + pib2 + pontosturisticos2 + percapita2 + (1.0f / densidade2) );// exemplo de soma total dos atributos ** (com densidade populacional invertida)
   
-  // Área para exibição dos dados da cidade
+  // Área para exibição dos dados das cartas
   
   // resultado da carta 1
  
@@ -112,31 +112,51 @@ int main() {
   printf("PIB per capita: %.2f\n", percapita2);
   printf("Super poder : %f", superpoder2);
 
-  // resultado da comparação entre as cartas 
 
-  print("população: carta 1 venceu (%d)", populacao > populacao2); // a comparação na população e outras varieaveis é para ver qual é maior
-  print("area Km²: carta 1 venceu (%d)", areakm > areakm2);
-  print("PIB: carta 1 venceu (%d)", pib > pib2);
-  print("Pontos Turisticos:  carta 1 venceu (%d)", pontosturisticos > pontosturisticos2);
-  print("Densidade Populacional carta 2 venceu (%d)", densidade < densidade2); //na densidade da comparação é para menor quantidade
-  print("PIB per capita: carta 1 venceu (%d)", percapita > percapita2);
-  print("Super poder:  carta 1 venceu (%d)", superpoder > superpoder2);
 
-  
-  printf("Carta 1 - São Paulo (SP): 12.300.000\n"); //uma mensagem para comparativo
-  printf("Carta 2 - Rio de Janeiro (RJ): 6.000.000\n");
+  // menu interativo
+
+switch (opcao)
+{
+case 1:
+  /* code */
+break;
+case 2:
+  /* code */
+break;
+case 3:
+  /* code */
+break;
+case 4:
+  /* code */
+break;
+case 5:
+  /* code */
+break;
+case 6:
+  /* code */
+break;
+
+default:
+  Printf("Valor incorreto, Digite um valor válido\n");
+  break;
+}
 
 // estruturas de decisão 
 
   if(populacao > populacao2){
     printf("\nCarta 1 (São Paulo) venceu!\n");
-  }else{
+  }else if(populacao < populacao2){
     printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }else{ 
+    printf("Empatou");
   }
   if(areakm > areakm2){
     printf("Carta 1 (São Paulo) venceu\n");
-  }else{
+  }else if(areakm < areakm2){
     printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }else{
+  printf("Empatou");
   }
   if(pib > pib2){
     printf("Carta 1 (São Paulo) venceu\n");
