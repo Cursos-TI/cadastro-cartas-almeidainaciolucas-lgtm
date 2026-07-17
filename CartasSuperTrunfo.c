@@ -115,17 +115,42 @@ int main() {
 
 
   // menu interativo
+  printf("Escolha uma das opções, para comparação: \n");
+  printf("1. População\n");
+  printf("2. Area em Km²\n");
+  printf("3. PIB\n");
+  printf("4. Número de pontos turísticos\n");
+  printf("5. Densidade populacional\n");
+  printf("6. PIB per capita\n");
+  printf("7. SUPERPODER\n");
+  printf("Escolha sua opção: \n");
+  scanf("%d", &opcao);
 
+  // logica e resolução para o menu
 switch (opcao)
 {
 case 1:
-  /* code */
+  if(populacao > populacao2){
+    printf("\nCarta 1 (São Paulo) venceu!\n");
+  }else if(populacao < populacao2){
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }else{ 
+    printf("Empatou");
 break;
 case 2:
-  /* code */
+   if(areakm > areakm2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  }else if(areakm < areakm2){
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }else{
+  printf("Empatou");
 break;
 case 3:
-  /* code */
+  if(pib > pib2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  }else{
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }
 break;
 case 4:
   /* code */
@@ -144,20 +169,8 @@ default:
 
 // estruturas de decisão 
 
-  if(populacao > populacao2){
-    printf("\nCarta 1 (São Paulo) venceu!\n");
-  }else if(populacao < populacao2){
-    printf("Carta 2 (Rio de Janeiro), venceu!\n");
-  }else{ 
-    printf("Empatou");
-  }
-  if(areakm > areakm2){
-    printf("Carta 1 (São Paulo) venceu\n");
-  }else if(areakm < areakm2){
-    printf("Carta 2 (Rio de Janeiro), venceu!\n");
-  }else{
-  printf("Empatou");
-  }
+
+
   if(pib > pib2){
     printf("Carta 1 (São Paulo) venceu\n");
   }else{
