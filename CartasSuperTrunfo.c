@@ -8,7 +8,7 @@ int main() {
 
   // Área para definição das variáveis para armazenar as propriedades das cidades
   
-  //* variaveis para carta 1 
+  //* variaveis para carta 1 e carta 2
   
   char estado, estado2; //* letra que representa o estado, (EX: A a H.)
   char codigo[5], codigo2[5]; //* Código da carta (A01)
@@ -26,7 +26,7 @@ int main() {
   // Área para entrada de dados
   
  //Dados da Carta 1 
-  printf("Insira os dados da carta 1 \n"); //mensgem a ser exibida
+  printf("Insira os dados da carta 1 \n"); // mensagem a ser exibida
   printf("insira o estado: "); // mensagem com os dados das informaçoes a serem coletadas
   scanf("%c", &estado); // area da coleta da variavel
     
@@ -48,9 +48,9 @@ int main() {
   printf("Número de pontos turisticos: ");
   scanf("%d", &pontosturisticos);
   
-  //Dados da Carta 2 //mostra imagem para insersir e logo a baixo espaco de interação com usuário
+  //Dados da Carta 2 //
   
-  printf("\nInsira os dados da carta 2 \n"); //mensgem a ser exibida
+  printf("\nInsira os dados da carta 2 \n"); // mensagem a ser exibida
   printf("insira o estado: "); // mensagem com os dados das informaçoes a serem coletadas
   scanf(" %c", &estado2); // area da coleta da variavel
     
@@ -87,7 +87,7 @@ int main() {
   
   // resultado da carta 1
  
-  printf("\nEstado: %c\n", estado); // area que vai ser exibida com informaçoes da carta 1 
+  printf("\nEstado: %c\n", estado); // area que vai ser exibida com informações da carta 1 
   printf("Codigo da carta: %s\n", codigo);
   printf("Nome da cidade: %s\n", nomedacidade);
   printf("População: %lu\n", populacao);
@@ -111,111 +111,7 @@ int main() {
   printf("PIB per capita: %.2f\n", percapita2);
   printf("Super poder : %.2f", superpoder2);
 
-
-
-  // menu interativo
-  printf("Escolha uma das opções, para comparação: \n");
-  printf("1. População\n");
-  printf("2. Area em Km²\n");
-  printf("3. PIB\n");
-  printf("4. Número de pontos turísticos\n");
-  printf("5. Densidade populacional\n");
-  printf("6. PIB per capita\n");
-  printf("7. SUPERPODER\n");
-  printf("Escolha sua opção: \n");
-  scanf("%d", &opcao);
-
-  // logica e resolução para o menu
-switch (opcao){
-
-case 1:
-    printf(" Atributo: População\n");
-    printf("%s: %lu\n", nomedacidade, populacao);
-    printf("%s: %lu\n", nomedacidade2, populacao2);
-  if(populacao > populacao2){
-    printf("\n Vencedor: %s\n", nomedacidade);
-  }else if(populacao < populacao2){
-    printf("\n Vencedor: %s\n", nomedacidade2);
-  }else{ 
-    printf("Empatou");
-  }
-  break;
-case 2:
-    printf(" Atributo: Area em Km²\n");
-    printf("%s: %f\n", nomedacidade, areakm);
-    printf("%s: %f\n", nomedacidade2, areakm2);   
-if(areakm > areakm2){
-     printf("\n Vencedor: %s\n", nomedacidade);
-  }else if(areakm < areakm2){
-    printf("\n Vencedor: %s\n", nomedacidade2);
-  }else{
-    printf("Empatou!");
-  }
-  break;
-case 3:
-    printf(" Atributo: PIB\n");
-    printf("%s: %.2f\n", nomedacidade, pib);
-    printf("%s: %.2f\n", nomedacidade2, pib2);  
-if(pib > pib2){
-    printf("\n Vencedor: %s\n", nomedacidade);
-  }else if(pib < pib2){
-    printf("\n Vencedor: %s\n", nomedacidade2);
-  }else{
-    printf("Empatou!");
-  }
-  break;
-case 4:
-    printf(" Atributo: Pontos Turísticos\n");
-    printf("%s: %d\n", nomedacidade, pontosturisticos);
-    printf("%s: %d\n", nomedacidade2, pontosturisticos2);    
-if(pontosturisticos > pontosturisticos2){
-    printf("\n Vencedor: %s\n", nomedacidade);
-  }else if(pontosturisticos < pontosturisticos2){
-    printf("\n Vencedor: %s\n", nomedacidade2);
-  }else{
-    printf("Empatou!");
-  }
-  break;
-case 5:
-    printf(" Atributo: Densidade Demográfica\n");
-    printf("%s: %.2f\n", nomedacidade, densidade);
-    printf("%s: %.2f\n", nomedacidade2, densidade2);  
-if(densidade < densidade2){
-     printf("\n Vencedor: %s\n", nomedacidade);
-  }else if(densidade < densidade2){
-    printf("\n Vencedor: %s\n", nomedacidade2);
-  }else{
-    printf("Empatou!");
-  }
-break;
-case 6:
-    printf(" Atributo: PIB Percapita\n");
-    printf("%s: %.2f\n", nomedacidade, percapita);
-    printf("%s: %.2f\n", nomedacidade2, percapita2);
-if(percapita > percapita2){
-     printf("\n Vencedor: %s\n", nomedacidade);
-  }else if(percapita < percapita2){
-    printf("\n Vencedor: %s\n", nomedacidade2);
-  }else{
-    printf("Empatou!");
-  }
-break;
-case 7:
-    printf(" Atributo: Super Poder\n");
-    printf("%s: %.2f\n", nomedacidade, superpoder);
-    printf("%s: %.2f\n", nomedacidade2, superpoder2); 
-if(superpoder > superpoder2){
-    printf("\n Vencedor: %s\n", nomedacidade);
-  }else if(superpoder < superpoder2){
-    printf("\n Vencedor: %s\n", nomedacidade2);
-  }else{
-    printf("Empatou!");
-  }
-break;
-default:
-  printf("Valor incorreto, Digite um valor válido\n");
-  break;
-}
+ 
   return 0;
 
 }
