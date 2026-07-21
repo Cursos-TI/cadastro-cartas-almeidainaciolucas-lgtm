@@ -127,8 +127,8 @@ int main() {
   scanf("%d", &opcao);
 
   // logica e resolução para o menu
-switch (opcao)
-{
+switch (opcao){
+
 case 1:
   if(populacao > populacao2){
     printf("\nCarta 1 (São Paulo) venceu!\n");
@@ -136,66 +136,63 @@ case 1:
     printf("Carta 2 (Rio de Janeiro), venceu!\n");
   }else{ 
     printf("Empatou");
-break;
+  }
+  break;
 case 2:
    if(areakm > areakm2){
     printf("Carta 1 (São Paulo) venceu\n");
   }else if(areakm < areakm2){
     printf("Carta 2 (Rio de Janeiro), venceu!\n");
   }else{
-  printf("Empatou");
-break;
+    printf("Empatou!");
+  }
+  break;
 case 3:
   if(pib > pib2){
     printf("Carta 1 (São Paulo) venceu\n");
-  }else{
+  }else if(pib < pib2){
     printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }else{
+    printf("Empatou!");
   }
-break;
+  break;
 case 4:
-  /* code */
-break;
+  if(pontosturisticos > pontosturisticos2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  }else if(pontosturisticos< pontosturisticos2){
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }else{
+    printf("Empatou!");
+  }
+  break;
 case 5:
-  /* code */
+  if(densidade < densidade2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  }else if(densidade > densidade2){
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }else{
+    printf("Empatou!");
 break;
 case 6:
-  /* code */
+  if(percapita > percapita2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  }else if(percapita < percapita2){
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }else{
+    printf("Empatou!");
 break;
-
+case 7:
+  if(superpoder > superpoder2){
+    printf("Carta 1 (São Paulo) venceu\n");
+  }else if(superpoder < superpoder2){
+    printf("Carta 2 (Rio de Janeiro), venceu!\n");
+  }else{
+    printf("Empatou!");
+  }
+break;
 default:
   Printf("Valor incorreto, Digite um valor válido\n");
   break;
 }
-
-// estruturas de decisão 
-
-
-
-  if(pib > pib2){
-    printf("Carta 1 (São Paulo) venceu\n");
-  }else{
-    printf("Carta 2 (Rio de Janeiro), venceu!\n");
-  }
-  if(pontosturisticos > pontosturisticos2){
-    printf("Carta 1 (São Paulo) venceu\n");
-  }else{
-    printf("Carta 2 (Rio de Janeiro), venceu!\n");
-  }
-  if(densidade < densidade2){
-    printf("Carta 1 (São Paulo) venceu\n");
-  }else{
-    printf("Carta 2 (Rio de Janeiro), venceu!\n");
-  }
-  if(percapita > percapita2){
-    printf("Carta 1 (São Paulo) venceu\n");
-  }else{
-    printf("Carta 2 (Rio de Janeiro), venceu!\n");
-  }
-  if(superpoder > superpoder2){
-    printf("Carta 1 (São Paulo) venceu\n");
-  }else{
-    printf("Carta 2 (Rio de Janeiro), venceu!\n");
-  }
-  
   return 0;
-} 
+}
